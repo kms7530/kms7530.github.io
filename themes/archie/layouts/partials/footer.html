@@ -19,3 +19,4 @@
   feather.replace()
 </script>
 {{- end -}}
+{{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
