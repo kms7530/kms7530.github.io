@@ -5,14 +5,5 @@
 
 </body>
 {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
-{{ if (not (eq .Site.Params.utterances.repo "")) }}
 
-{{ $term := "pathname" }}
-{{ $theme := "github-light" }}
-{{ $crossorigin := "anonymous"}}
-<script src="https://utteranc.es/client.js" repo="blog-comments" issue-term="pathname" theme="github-light"
-    crossorigin="anonymous" async>
-    </script>
-
-{{ end }}
 </html>
