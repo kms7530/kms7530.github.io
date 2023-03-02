@@ -1,4 +1,4 @@
-baseURL = 'http://kms7530.github.io'
+baseURL = 'dev.minseok.me'
 languageCode = 'ko-kr'
 title = 'Minseok Kwak - dev'
 theme = "archie"
