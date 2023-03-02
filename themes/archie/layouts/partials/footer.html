@@ -5,6 +5,9 @@
     <a class="border"></a>
     {{- end -}}
   </div>
+  <script src="https://utteranc.es/client.js" repo="blog-comments" issue-term="pathname" theme="github-light"
+    crossorigin="anonymous" async>
+    </script>
   <div class="footer-info">
     {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
