@@ -2,3 +2,5 @@ baseURL = 'http://kms7530.github.io'
 languageCode = 'ko-kr'
 title = 'Minseok Kwak - dev'
 theme = "archie"
+[params.utterances]
+    repo = "github.com/kms7530/blog-comments"

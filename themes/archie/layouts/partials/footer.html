@@ -3,11 +3,9 @@
     {{- range $index, $key := .Site.Params.Social -}}
     <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
     <a class="border"></a>
+    {{ partial "utterances" . }}
     {{- end -}}
   </div>
-  <script src="https://utteranc.es/client.js" repo="blog-comments" issue-term="pathname" theme="github-light"
-    crossorigin="anonymous" async>
-    </script>
   <div class="footer-info">
     {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
       href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
