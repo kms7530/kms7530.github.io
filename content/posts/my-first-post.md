@@ -7,6 +7,6 @@ katex: true
 # 제발 좀 되라!
 $$
 \begin{align}
-f(x)=w \product x + b
+f(x)=w \dot x + b
 \end{align}
 $$

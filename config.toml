@@ -7,3 +7,23 @@ copyright = "© Athul"
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
 	katex = true # enable KaTeX support
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
