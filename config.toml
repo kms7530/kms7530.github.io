@@ -2,7 +2,7 @@ baseURL = 'http://kms7530.github.io'
 languageCode = 'ko-kr'
 title = 'Minseok Kwak - dev'
 theme = "archie"
-copyright = "© Athul"
+copyright = "© Minseok Kwak"
 
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
