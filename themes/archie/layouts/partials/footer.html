@@ -1,4 +1,7 @@
 <footer>
+  <script src="https://utteranc.es/client.js" repo="kms7530/blog-comments" issue-term="pathname" label="💬"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
   <div style="display:flex">
     {{- range $index, $key := .Site.Params.Social -}}
     <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
