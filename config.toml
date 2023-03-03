@@ -5,7 +5,7 @@ theme = "archie"
 copyright = "© Minseok Kwak"
 
 [params]
-	mode="auto" # color-mode → light,dark,toggle or auto
+	mode="toggle" # color-mode → light,dark,toggle or auto
 	katex = true # enable KaTeX support
 
 [[menu.main]]
