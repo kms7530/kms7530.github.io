@@ -22,3 +22,5 @@ weight = 2
 name = "Tags"
 url = "/tags"
 weight = 4
+
+staticDir = ['static']
