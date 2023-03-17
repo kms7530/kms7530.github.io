@@ -23,7 +23,7 @@ katex: true
 - 이 기법은 모델의 병목, 파이프라인 설계의 어려움으로 인해 상당히 어려운 방식이다.
 - 아래는 두 개의 GPU를 이용하여 병렬처리는 하는 방법이다.
 
-![Untitled](/Multi%20GPU%20%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%E1%84%8B%E1%85%B4%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%8B%E1%85%AD%E1%84%89%E1%85%A5%E1%86%BC%E1%84%80%E1%85%AA%20pytorch%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5%E1%84%8B%E1%85%B4%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8%20f72196b5d3224ea7b9161488f2c1a1bf/Untitled.png)
+![Untitled](/Multi%20GPU%20학습의%20필요성과%20pytorch에서의%20방법%20f72196b5d3224ea7b9161488f2c1a1bf/Untitled.png)
 
 - 코드는 아래와 같다.
 
@@ -68,7 +68,7 @@ class ModelParallelResNet50(ResNet):
     - 해당 방식의 문제로 GPU 사용이 한 GPU에 몰릴수 있다는 점이다.
 - 아래는 작동방식을 설명한 그림과 예시 코드다.
 
-![Untitled](/Multi%20GPU%20%E1%84%92%E1%85%A1%E1%86%A8%E1%84%89%E1%85%B3%E1%86%B8%E1%84%8B%E1%85%B4%20%E1%84%91%E1%85%B5%E1%86%AF%E1%84%8B%E1%85%AD%E1%84%89%E1%85%A5%E1%86%BC%E1%84%80%E1%85%AA%20pytorch%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5%E1%84%8B%E1%85%B4%20%E1%84%87%E1%85%A1%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8%20f72196b5d3224ea7b9161488f2c1a1bf/Untitled%201.png)
+![Untitled](/Multi%20GPU%20학습의%20필요성과%20pytorch에서의%20방법%20f72196b5d3224ea7b9161488f2c1a1bf/Untitled%201.png)
 
 ```python
 parallel_model = torch.nn.DataParallel(model) 	# Encapsulate the model
@@ -83,6 +83,7 @@ predictions = parallel_model(inputs) 			# Forward pass with new parameters
 
 - 각 CPU마다 프로세스를 생성하여 개별 GPU에 할당한다.
     - 이는 Forward / Backward 계산을 수행 후 gradient를 취합하여 평균을 낸다.
+- 
 
 ```python
 def main():

@@ -69,9 +69,9 @@ class PythonList(nn.Module):
         self.add_list = [Add(2), Add(3), Add(5)]
 
     def forward(self, x):
-        x = self.add_list[1](/x)
-        x = self.add_list[0](/x)
-        x = self.add_list[2](/x)
+        x = self.add_list[1](x)
+        x = self.add_list[0](x)
+        x = self.add_list[2](x)
         
         return x
 
@@ -84,9 +84,9 @@ class PyTorchList(nn.Module):
         self.add_list = nn.ModuleList([Add(2), Add(3), Add(5)])
 
     def forward(self, x):
-        x = self.add_list[1](/x)
-        x = self.add_list[0](/x)
-        x = self.add_list[2](/x)
+        x = self.add_list[1](x)
+        x = self.add_list[0](x)
+        x = self.add_list[2](x)
         
         return x
 ```
@@ -138,7 +138,7 @@ print(model_repr)
 #   )
 # )
 ```
-<!-- 
+
 # hook
 
-# apply -->
+# apply

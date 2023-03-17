@@ -1,6 +1,6 @@
 ---
 title: Dataset과 Dataloader
-date: 2023-03-05T12:02:00Z
+date: 2023-13-05T12:02:00Z
 draft: false
 katex: true
 ---
