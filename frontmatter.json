@@ -31,5 +31,36 @@
   ],
   "frontMatter.framework.id": "hugo",
   "frontMatter.content.publicFolder": "static",
-  "frontMatter.preview.host": "http://localhost:1313"
+  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "archetypes",
+      "path": "[[workspace]]/archetypes"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "archetypes",
+      "path": "[[workspace]]/themes/archie/archetypes"
+    },
+    {
+      "title": "archetypes",
+      "path": "[[workspace]]/themes/archie/exampleSite/archetypes"
+    },
+    {
+      "title": "content",
+      "path": "[[workspace]]/themes/archie/exampleSite/content"
+    },
+    {
+      "title": "homepage",
+      "path": "[[workspace]]/themes/archie/exampleSite/content/homepage"
+    },
+    {
+      "title": "posts",
+      "path": "[[workspace]]/themes/archie/exampleSite/content/posts"
+    }
+  ],
+  "frontMatter.git.enabled": true
 }
